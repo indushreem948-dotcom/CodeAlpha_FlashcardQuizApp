@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div>
+        <h1>FlashLearn ✨</h1>
+        <p>Your personal learning space</p>
+    </div>
+    <div class="header-actions">
+        <button id="exportBtn">Export Cards</button>
+        <button id="importBtn">Import Cards</button>
+        <input type="file" id="importFile" accept=".json" hidden>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- Dashboard -->
+    <section class="panel">
+        <h2>📊 Dashboard</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span>Total Flashcards</span>
+                <strong id="totalCards">0</strong>
+            </div>
+            <div class="stat-card">
+                <span>Quizzes Completed</span>
+                <strong id="quizzesCompleted">0</strong>
+            </div>
+            <div class="stat-card">
+                <span>Average Score</span>
+                <strong id="averageScore">0%</strong>
+            </div>
+            <div class="stat-card">
+                <span>Best Score</span>
+                <strong id="bestScore">0%</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flashcards -->
+    <section class="panel">
+        <div class="section-heading">
+            <h2>📚 Flashcards</h2>
+            <label>
+                Subject:
+                <select id="categoryFilter">
+                    <option value="All">All Subjects</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="flashcard">
+            <span id="cardCategory" class="category-badge">General</span>
+            <button id="difficultBtn" class="star-btn" title="Mark as difficult">☆ Difficult</button>
+            <h3 id="question">Loading...</h3>
+            <p id="answer" class="answer hidden"></p>
+
+            <div class="button-row">
+                <button id="showAnswerBtn">Show Answer</button>
+                <button id="prevBtn" class="secondary">Previous</button>
+                <button id="nextBtn" class="secondary">Next</button>
+            </div>
+            <p id="cardPosition" class="muted"></p>
+        </div>
+
+        <div class="button-row">
+            <button id="reviseBtn" class="secondary">Revise Difficult Cards</button>
+            <button id="showAllBtn" class="secondary">Show All Cards</button>
+        </div>
+    </section>
+
+    <!-- Manage Cards -->
+    <section class="panel">
+        <h2>✏️ Manage Flashcards</h2>
+        <form id="cardForm">
+            <label for="questionInput">Question</label>
+            <input id="questionInput" type="text" placeholder="Enter your question" required>
+
+            <label for="answerInput">Answer</label>
+            <textarea id="answerInput" placeholder="Enter the answer" required></textarea>
+
+            <label for="categoryInput">Subject</label>
+            <input id="categoryInput" type="text" placeholder="e.g. Java, DBMS, Python" value="General" required>
+
+            <div class="button-row">
+                <button type="submit" id="saveCardBtn">Add Card</button>
+                <button type="button" id="cancelEditBtn" class="secondary hidden">Cancel Edit</button>
+                <button type="button" id="deleteCardBtn" class="danger">Delete Current Card</button>
+            </div>
+            <p id="formMessage" class="muted"></p>
+        </form>
+    </section>
+
+    <!-- Quiz -->
+    <section class="panel">
+        <h2>🧠 Timed Quiz</h2>
+        <p>Test yourself using your flashcards. Each question has a 20-second time limit.</p>
+        <button id="startQuizBtn">Start Timed Quiz</button>
+
+        <div id="quizArea" class="quiz-area hidden">
+            <div class="quiz-info">
+                <span id="quizProgress">Question 1</span>
+                <span id="timer">20s</span>
+                <span id="liveScore">Score: 0</span>
+            </div>
+
+            <h3 id="quizQuestion"></h3>
+            <div id="quizOptions" class="options"></div>
+            <p id="quizFeedback"></p>
+            <button id="nextQuestionBtn" class="hidden">Next Question</button>
+        </div>
+
+        <div id="quizResult" class="result hidden">
+            <h3>Quiz Completed! 🎉</h3>
+            <p id="resultText"></p>
+            <button id="restartQuizBtn">Try Again</button>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Made for learning, one card at a time 💜</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
