@@ -71,7 +71,7 @@ No backend server or database installation is required.
   ![FlashLearn Flashcards](https://github.com/indushreem948-dotcom/CodeAlpha_FlashcardQuizApp/blob/main/Screenshot%202026-10-01%20211318.png?raw=true)
 
   ###Quiz
-  ![FlashLearn Quiz]()
+  ![FlashLearn Quiz](https://github.com/indushreem948-dotcom/CodeAlpha_FlashcardQuizApp/blob/main/Screenshot%202026-10-01%20211349.png?raw=true)
 
   ###Quiz Results
   ![FlashLearn Quiz Results]()  
