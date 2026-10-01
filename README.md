@@ -38,6 +38,7 @@ CodeAlpha_FlashcardQuizApp/
 ├── script.js
 └── README.md
 ```
+
 ▶️ How to Run the Project
 
 1. Download or clone the project repository.
