@@ -65,7 +65,10 @@ No backend server or database installation is required.
 
   ##Screenshorts
   ###Dashboard
-  ![
+  ![FlashLearn Dashboard](https://github.com/indushreem948-dotcom/CodeAlpha_FlashcardQuizApp/blob/main/Screenshot%202026-10-01%20211150.png?raw=true)
+
+  ###Flashcard
+  
 
 👩‍💻 Author
 
