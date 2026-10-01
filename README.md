@@ -63,6 +63,10 @@ No backend server or database installation is required.
 - Cloud-based data synchronization.
 - More question types and learning statistics.
 
+  ##Screenshorts
+  ###Dashboard
+  ![
+
 👩‍💻 Author
 
 Indushree M
