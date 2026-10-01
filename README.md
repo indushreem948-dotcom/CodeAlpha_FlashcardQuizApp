@@ -29,16 +29,15 @@ FlashLearn is a web-based learning application developed using HTML, CSS, and Ja
 
 Add screenshots of your application here to show the dashboard, flashcards, and quiz interface.
 
-##📂 Project Structure
-'''text
+## 📂 Project Structure
+
+```text
 CodeAlpha_FlashcardQuizApp/
-│
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
-'''
-
+```
 ▶️ How to Run the Project
 
 1. Download or clone the project repository.
