@@ -63,17 +63,17 @@ No backend server or database installation is required.
 - Cloud-based data synchronization.
 - More question types and learning statistics.
 
-  ##Screenshorts
-  ###Dashboard
+##Screenshots
+###Dashboard
   ![FlashLearn Dashboard](https://github.com/indushreem948-dotcom/CodeAlpha_FlashcardQuizApp/blob/main/Screenshot%202026-10-01%20211150.png?raw=true)
 
-  ###Flashcard
+###Flashcards
   ![FlashLearn Flashcards](https://github.com/indushreem948-dotcom/CodeAlpha_FlashcardQuizApp/blob/main/Screenshot%202026-10-01%20211318.png?raw=true)
 
-  ###Quiz
+###Quiz
   ![FlashLearn Quiz](https://github.com/indushreem948-dotcom/CodeAlpha_FlashcardQuizApp/blob/main/Screenshot%202026-10-01%20211349.png?raw=true)
 
-  ###Quiz Results
+###Quiz Results
   ![FlashLearn Quiz Results](https://github.com/indushreem948-dotcom/CodeAlpha_FlashcardQuizApp/blob/main/Screenshot%202026-10-01%20212031.png?raw=true)  
 
 👩‍💻 Author
